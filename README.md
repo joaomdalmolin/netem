@@ -1,6 +1,18 @@
 # netem
 Network emulator to affect only external traffic (exclude 192.168.0.0/16)
 
+## Installation
+Download it
+```
+wget https://github.com/joaomdalmolin/netem/releases/download/v0.0.1/netem.sh
+# OR
+curl -O https://github.com/joaomdalmolin/netem/releases/download/v0.0.1/netem.sh
+```
+Download and allow it to be executed
+```
+chmod +x netem.sh
+```
+
 ## Usage:
 ```
 sudo ./netem.sh <add|del> <interface> [latency] [jitter] [bandwidth] [packet_loss]
@@ -8,9 +20,10 @@ sudo ./netem.sh <add|del> <interface> [latency] [jitter] [bandwidth] [packet_los
 
 ## Examples:
 ```
-   sudo ./netem.sh add eth0 100ms 30ms 10mbit 2%
-   sudo ./netem.sh add eth0 200ms          # only change latency
-   sudo ./netem.sh del eth0
+sudo ./netem.sh add eth0 100ms 30ms 10mbit 2%
+# only change latency
+sudo ./netem.sh add eth0 200ms
+sudo ./netem.sh del eth0
 ```
 
 ## Description:
