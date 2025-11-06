@@ -1,5 +1,5 @@
 # netem
-Network emulator to affect only external traffic (exclude 192.168.0.0/16)
+Network emulation only to external traffic (exclude 192.168.0.0/16)
 
 ## Installation
 Download it
